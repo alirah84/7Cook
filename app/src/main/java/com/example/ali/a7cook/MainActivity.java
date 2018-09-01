@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(List<Banner> banners) {
                 RecyclerView bannerRv = findViewById(R.id.rv_main_slider);
+                bannerRv.setNestedScrollingEnabled(false);
                 bannerRv.setLayoutManager(new LinearLayoutManager(MainActivity.this,LinearLayoutManager.HORIZONTAL,false));
                 bannerRv.setAdapter(new BannerAdapter(banners));
                 SnapHelper snapHelper = new PagerSnapHelper();
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(List<Category> categories) {
                 RecyclerView categoryRv = findViewById(R.id.rv_main_category);
+                categoryRv.setNestedScrollingEnabled(false);
                 categoryRv.setLayoutManager(new LinearLayoutManager(MainActivity.this,LinearLayoutManager.HORIZONTAL,false));
                 categoryRv.setAdapter(new CategoryAdapter(categories));
             }
@@ -64,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(List<Recipe> recipes) {
                 RecyclerView recipeRv = findViewById(R.id.rv_main_recipe);
+                recipeRv.setNestedScrollingEnabled(false);
                 recipeRv.setLayoutManager(new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL));
                 recipeRv.setAdapter(new RecipeAdapter(recipes));
             }
