@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 recipeRv.setNestedScrollingEnabled(false);
                 recipeRv.setLayoutManager(new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL));
                 recipeRv.setAdapter(new RecipeAdapter(recipes));
+                //
             }
         });
     }
