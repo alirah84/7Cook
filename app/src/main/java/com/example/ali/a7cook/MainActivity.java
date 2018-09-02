@@ -70,9 +70,6 @@ public class MainActivity extends AppCompatActivity {
                 recipeRv.setLayoutManager(new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL));
                 recipeRv.setAdapter(new RecipeAdapter(recipes));
 
-                //test
-
-                //this is for test
             }
         });
     }
