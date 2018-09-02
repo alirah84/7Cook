@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
                 bannerRv.setAdapter(new BannerAdapter(banners));
                 SnapHelper snapHelper = new PagerSnapHelper();
                 snapHelper.attachToRecyclerView(bannerRv);
-                //issue is fixed
             }
         });
     }
@@ -70,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
                 recipeRv.setNestedScrollingEnabled(false);
                 recipeRv.setLayoutManager(new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL));
                 recipeRv.setAdapter(new RecipeAdapter(recipes));
-                //
             }
         });
     }
