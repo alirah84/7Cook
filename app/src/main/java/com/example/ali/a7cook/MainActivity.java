@@ -71,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
                 recipeRv.setAdapter(new RecipeAdapter(recipes));
 
                 //test
+
+                //this is for test
             }
         });
     }
